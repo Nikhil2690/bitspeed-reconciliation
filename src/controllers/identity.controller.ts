@@ -7,8 +7,8 @@ import { Request, Response } from "express"
 const identityController = async(req: Request, res: Response) => {
 
     try {
-        const {email, phone} = req.body
-        const result = identityService({email, phone})
+        const {email, phoneNumber} = req.body
+        const result = await identityService({email, phoneNumber})
     
         res.status(200).
         json({
