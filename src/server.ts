@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from "cors"
 import dotenv from "dotenv"
-import {router as identityRoutes} from './routes/identity.route'
+import {router as identityRoutes} from './routes/identity.route.js'
 
 dotenv.config({
     path: './env'
